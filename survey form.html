@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)file:///C:/Users/91789/FORMS/servey_form18.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>survey form</title>
+    <style>
+        body{
+            font-family: sans-serif;
+            background-color: rgb(254, 208, 216);
+        }   
+        fieldset{
+            border: 1px solid black;
+            border-radius: 8px;
+            text-align: left;
+            background-color: rgb(240, 238, 238);
+            padding: 30px 40px;
+            margin: 30px 100px 30px 100px;
+            /* box-shadow: 5px 15px 25px solid rgb(18, 17, 17); */
+            /* display: none; */
+        }
+        legend{
+            font-size: 40px;
+        }
+        #span{
+            color: rgb(238, 65, 65);
+        }
+        label{
+            font-size: 20px;
+        }
+        p{
+            font-size: 20px;
+            
+        }
+        input {
+            padding: 8px;
+            background-color: rgb(219, 217, 217);
+            width: 95%;
+            border-radius: 4px ;
+            font-size: 18px;
+        }
+        select{
+            width: 100%;
+            padding: 10px;
+            border-radius: 4px;
+            background-color: rgb(219, 217, 217);
+            font-size: 18px;
+        }
+        
+        input[type="radio"],
+        input[type="checkbox"] {
+            display: inline-block;
+            width: auto;
+        }
+        
+        textarea{
+            width: 90%;
+            border-radius: 3px;
+            padding: 20px;
+            background-color: rgb(219, 217, 217);
+
+        }
+        button{
+            width: 100%;
+            background-color: aquamarine;
+            border-radius: 4px;
+            font-size: 30px;
+            font-family: sans-serif;
+            border: 1px solid grey;
+        }
+        @media screen and (max-width:400px){
+            body{
+                background-color: rgb(240, 81, 113);
+            }
+            fieldset{
+                border-radius: 8px;
+                text-align: left;
+                background-color: rgb(240, 238, 238);
+                padding: 20px 20px;
+                margin: 30px 5px 30px 5px;
+                /* box-shadow: 5px 15px 25px solid rgb(18, 17, 17);    */
+
+            }
+            legend{
+                font-size: x-large;
+            }
+            #span{
+                color:blue;
+            }
+        }
+
+        @media screen and (min-width:401px) and (max-width:700px){
+            body{
+                background-color: rgb(222, 236, 66);
+            }
+            fieldset{
+                border-radius: 8px;
+                text-align: left;
+                background-color: rgb(240, 238, 238);
+                padding: 20px 20px;
+                margin: 30px 30px 30px 30px;
+                box-shadow: 5px 15px 25px solid rgb(18, 17, 17);   
+
+            }
+            legend{
+                font-size: xx-large;
+            }
+            #span{
+                color:#008cff;
+            }
+        }
+        @media screen and (min-width:701px) and (max-width:900px){
+            body{
+                background-color: rgb(189, 128, 246);
+            }
+            fieldset{
+                border-radius: 8px;
+                text-align: left;
+                background-color: rgb(240, 238, 238);
+                padding: 20px 20px;
+                margin: 30px 50px 30px 50px;
+                /* box-shadow: 5px 15px 25px solid rgb(18, 17, 17);    */
+
+            }
+            #span{
+                color:#00b3ff;
+            }
+        }
+        /* @media screen and () */
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend><span id="span">HVA</span> Servey Form</legend>
+
+            <label for="n">Name</label><br><br>
+            <input type="text" id="n" placeholder="Enter your name"><br><br>
+            <label for="e">Email</label><br><br>
+            <input type="text" id="e" placeholder="Enter your email"><br><br>
+            <label for="na">Age</label><br><br>
+            <input type="text" id="a" placeholder="Enter your age"><br><br>
+
+            <p>Which option best describes you ?</p>
+            <select placeholder="Select option">
+                <!-- <option>Select Option</option> -->
+                <option>Student</option>
+                <option>Intern</option>
+                <option>Professional</option>
+                <option>Other</option>
+            </select><br><br>
+
+            <p>Would you recommend to a friend ?</p>
+            <input type="radio" id="y" name="name" value="yes">
+            <label for="y">Yes</label><br><br>
+            <input type="radio" id="n" name="name" velue="no">
+            <label for="n">No</label><br><br>
+            <input type="radio" id="m" name="name" value="maybe">
+            <label for="m">Maybe</label><br><br>
+            
+            
+            <p>Languages and Frameworks known (Check all that apply)</p>
+            <input type="checkbox" id="c">
+            <label for="c">C</label><br><br>
+            <input type="checkbox" id="c++">
+            <label for="c++">C++</label><br><br>
+            <input type="checkbox" id="c#">
+            <label for="c#">C#</label><br><br>
+            <input type="checkbox" id="j">
+            <label for="j">Java</label><br><br>
+            <input type="checkbox" id="p">
+            <label for="p">Python</label><br><br>
+            <input type="checkbox" id="j">
+            <label for="j">JavaScript</label><br><br>
+            <input type="checkbox" id="r">
+            <label for="r">React</label><br><br>
+            <input type="checkbox" id="a">
+            <label for="a">Angular</label><br><br>
+            <input type="checkbox" id="s">
+            <label for="s">Spring</label><br><br>
+        
+
+            <lable for="text">Any connents or suggestions</lable>
+            <textarea id="text">            </textarea>
+            <br>
+            <br>
+
+            <button type="submit" value="submit">Submit</button>    
+    </fieldset>
+
+</body></html>
